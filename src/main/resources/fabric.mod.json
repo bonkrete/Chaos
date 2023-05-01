@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "chaos",
+  "version": "${version}",
+
+  "name": "Chaos Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Cato"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "E",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cato.chaos.Chaos"
+    ],
+    "client": [
+      "net.cato.chaos.ChaosClient"
+    ]
+  },
+  "mixins": [
+    "chaos.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
